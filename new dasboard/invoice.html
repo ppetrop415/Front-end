@@ -36,12 +36,6 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contacts</a>
-      </li>
     </ul>
 
     <!-- SEARCH FORM -->
@@ -143,11 +137,7 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
+
       
     </ul>
   </nav>
@@ -192,7 +182,7 @@
 
           <li class="nav-header">Tasks</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="inspections.html" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Inspections
@@ -219,11 +209,10 @@
           </li>
           <li class="nav-header">USERS</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="inspectors.html" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Inspectors
-                <span class="badge badge-danger right">2</span>
               </p>
             </a>
           </li>
@@ -757,8 +746,19 @@
 </div>
 <!-- ./wrapper -->
 
+
+
+
+
+
 <!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
@@ -781,5 +781,9 @@
 <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.js"></script>
+
+
+
+
 </body>
 </html>
