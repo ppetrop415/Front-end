@@ -137,7 +137,11 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
       
     </ul>
   </nav>
@@ -198,7 +202,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="businesses2.html" class="nav-link">
+            <a href="businesses2.html" class="nav-link active">
               <i class="nav-icon fas fa-store-alt"></i>
               <p>
                 Businesses
@@ -206,15 +210,7 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="widgets2.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
+
           <li class="nav-header">USERS</li>
           <li class="nav-item">
             <a href="inspectors2.html" class="nav-link">
@@ -225,7 +221,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="users_of_business2.html" class="nav-link active">
+            <a href="users_of_business2.html" class="nav-link">
               <i class="nav-icon fas fa-user-tag"></i>
               <p>
                 Businesses
@@ -266,10 +262,15 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-12">
-            <h1 class="m-0">Users of Businesses</h1>
+          <div class="col-sm-6">
+            <h1 class="m-0">Businesses</h1>
           </div><!-- /.col -->
-
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Businesses</li>
+            </ol>
+          </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -279,10 +280,10 @@
     <section class="content">
       <div class="container-fluid">
 
-        <!-- TABLE: OWNERS -->
+        <!-- TABLE: LATEST ORDERS -->
         <div class="card">
             <div class="card-header border-transparent">
-                <h3 class="card-title">Owners</h3>
+                <h3 class="card-title">Businesses</h3>
 
                 <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -293,100 +294,89 @@
             <!-- /.card-header -->
             <div class="card-body p-0">
               <div class="table-responsive">
-                <table class="table table-striped m-0">
+                <table class="table m-0">
                   <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>e-mail</th>
-                    <th>Phone</th>
-                    <th>Business</th>
-                    <th></th>
+                    <th style="width: 150px;">Title</th>
+                    <th>Owner</th>
+                    <th>Health Regulator</th>
+                    <th>VAT</th>
+                    <th>Activity</th>
+                    <th>State</th>
+                    <th style="width: 100px;">Classify</th>
+                    
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
+                    <td><a href="invoice2.html">MC' Donalds</a></td>
                     <td>Petropoulos Panagiotis</td>
-                    <td>example@gmail.com</td>
-                    <td>6977878787</td>
-                    <td>Coffe Island</td> 
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                 
+                    <td>Petropoulos Panagiotis</td>
+                    <td>155130279</td>
+                    <td>EME plirous epexergasias</td>
+                    <td>Athens</td>
+                    <td><span class="badge badge-success">Low</span></td>
+                    
                   </tr>
                   <tr>
+                    <td><a href="invoice2.html">Cafe Cafe</a></td>
                     <td>Kontaxi Zaxaroula</td>
-                    <td>example@gmail.com</td>
-                    <td>6968686868</td>
-                    <td>Cafe Cafe</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                     
+                    <td>Kontaxi Euaggelia</td>
+                    <td>155130279</td>
+                    <td>EME plirous epexergasias</td>
+                    <td>Nea Smirni</td>
+                    <td><span class="badge badge-warning">Middle</span></td>
+                    
                   </tr>
                   <tr>
-                    <td>Papagopoulos Ioannis</td>
-                    <td>example@gmail.com</td>
-                    <td>6977878787</td>
+                    <td><a href="invoice2.html">OR7429</a></td>
                     <td>Six Dogs</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td> 
-                  </tr>
-                  <tr>
-                    <td>Kontaxi Zaxaroula</td>
-                    <td>example@gmail.com</td>
-                    <td>6968686868</td>
-                    <td>Cafe Cafe</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                     
-                  </tr>
-                  <tr>
                     <td>Petropoulos Panagiotis</td>
-                    <td>example@gmail.com</td>
-                    <td>6977878787</td>
+                    <td>155130279</td>
+                    <td>EME plirous epexergasias</td>
+                    <td>Glyfada</td>
+                    <td><span class="badge badge-danger">High</span></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="invoice2.html">OR7429</a></td>
                     <td>Coffe Island</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                  
-                  </tr>
-                  <tr>
-                    <td>Kontaxi Zaxaroula</td>
-                    <td>example@gmail.com</td>
-                    <td>6968686868</td>
-                    <td>Cafe Cafe</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                     
-                  </tr>
-                  <tr>
                     <td>Petropoulos Panagiotis</td>
-                    <td>example@gmail.com</td>
-                    <td>6977878787</td>
-                    <td>Coffe Island</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                  
+                    <td>155130279</td>
+                    <td>EME plirous epexergasias</td>
+                    <td>Glyfada</td>
+                    <td><span class="badge badge-success">Low</span></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="invoice2.html">OR1848</a></td>
+                    <td>Samsung Smart TV</td>
+                    <td>Petropoulos Panagiotis</td>
+                    <td>155130279</td>
+                    <td>EME plirous epexergasias</td>
+                    <td>Glyfada</td>
+                    <td><span class="badge badge-warning">Pending</span></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="invoice2.html">OR7429</a></td>
+                    <td>iPhone 6 Plus</td>
+                    <td>Petropoulos Panagiotis</td>
+                    <td>155130279</td>
+                    <td>EME plirous epexergasias</td>
+                    <td>Glyfada</td>
+                    <td><span class="badge badge-danger">Delivered</span></td>
+                    
+                  </tr>
+                  <tr>
+                    <td><a href="invoice2.html">OR9842</a></td>
+                    <td>Call of Duty IV</td>
+                    <td>Petropoulos Panagiotis</td>
+                    <td>155130279</td>
+                    <td>EME plirous epexergasias</td>
+                    <td>Glyfada</td>
+                    <td><span class="badge badge-success">Shipped</span></td>
+                    
                   </tr>
                   </tbody>
                 </table>
@@ -394,132 +384,19 @@
               <!-- /.table-responsive -->
             </div>
             <!-- /.card-body -->
-            <div class="card-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Place New Order</a>
-              <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Orders</a>
-            </div>
-            <!-- /.card-footer -->
-        </div>
-        <!-- /.card -->
-
-        <!-- TABLE: HEALTH REGULATORS -->
-        <div class="card">
-            <div class="card-header border-transparent">
-                <h3 class="card-title">Health Regulators</h3>
-
-                <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button> 
-              </div>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body p-0">
-              <div class="table-responsive">
-                <table class="table table-striped m-0">
-                  <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>e-mail</th>
-                    <th>Phone</th>
-                    <th>Business</th>
-                    <th></th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">Petropoulos Panagiotis</a></td>
-                    <td>example@gmail.com</td>
-                    <td>6977878787</td>
-                    <td>Coffe Island</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                 
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">Kontaxi Zaxaroula</a></td>
-                    <td>example@gmail.com</td>
-                    <td>6968686868</td>
-                    <td>Cafe Cafe</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                    
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">Papagopoulos Ioannis</a></td>
-                    <td>example@gmail.com</td>
-                    <td>6977878787</td>
-                    <td>Six Dogs</td>
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">Kontaxi Zaxaroula</a></td>
-                    <td>example@gmail.com</td>
-                    <td>6968686868</td>
-                    <td>Cafe Cafe</td> 
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                   
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">Petropoulos Panagiotis</a></td>
-                    <td>example@gmail.com</td>
-                    <td>6977878787</td>
-                    <td>Coffe Island</td> 
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">Kontaxi Zaxaroula</a></td>
-                    <td>example@gmail.com</td>
-                    <td>6968686868</td>
-                    <td>Cafe Cafe</td>  
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>                  
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">Petropoulos Panagiotis</a></td>
-                    <td>example@gmail.com</td>
-                    <td>6977878787</td>
-                    <td>Coffe Island</td>  
-                    <td class="text-right">
-                      <a class="btn btn-primary btn-sm" href="invoice.html">
-                          <i class="fas fa-eye">
-                          </i>
-                      </a>
-                    </td>               
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.card-body -->
-            <div class="card-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Place New Order</a>
-              <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Orders</a>
+            <div class="card-footer">
+              <nav aria-label="Business Page Navigation">
+                <ul class="pagination justify-content-center m-0">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#">7</a></li>
+                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                </ul>
+              </nav>
             </div>
             <!-- /.card-footer -->
         </div>
