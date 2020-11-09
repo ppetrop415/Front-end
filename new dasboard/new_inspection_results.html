@@ -38,17 +38,6 @@
       </li>
     </ul>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
@@ -137,11 +126,7 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
+
       
     </ul>
   </nav>
@@ -150,7 +135,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-danger elevation-4">
     <!-- Brand Logo -->
-    <a href="index.html" class="brand-link">
+    <a href="index2.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Sanitary Inc</span>
     </a>
@@ -175,18 +160,26 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="index.html" class="nav-link">
+            <a href="index2.html" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
-                <span class="right badge badge-danger">New</span>
+                <span class="right badge badge-light">New</span>
               </p>
             </a>
           </li>
 
           <li class="nav-header">Tasks</li>
           <li class="nav-item">
-            <a href="inspections.html" class="nav-link">
+            <a href="new_inspection.html" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                New Inspection
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="inspections2.html" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Inspections
@@ -194,7 +187,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="businesses.html" class="nav-link active">
+            <a href="businesses2.html" class="nav-link">
               <i class="nav-icon fas fa-store-alt"></i>
               <p>
                 Businesses
@@ -203,7 +196,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="widgets2.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Widgets
@@ -213,7 +206,7 @@
           </li>
           <li class="nav-header">USERS</li>
           <li class="nav-item">
-            <a href="inspectors.html" class="nav-link">
+            <a href="inspectors2.html" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Inspectors
@@ -221,10 +214,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="users_of_business.html" class="nav-link">
+            <a href="users_of_business2.html" class="nav-link">
               <i class="nav-icon fas fa-user-tag"></i>
               <p>
-                Business
+                Businesses
               </p>
             </a>
           </li>
@@ -259,15 +252,9 @@
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Businesses</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Businesses</li>
-            </ol>
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="m-0 "></h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -275,132 +262,119 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content mt-1">
       <div class="container-fluid">
 
-        <!-- TABLE: LATEST ORDERS -->
-        <div class="card">
-            <div class="card-header border-transparent">
-                <h3 class="card-title">Businesses</h3>
+            <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
 
-                <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button> 
-              </div>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body p-0">
-              <div class="table-responsive">
-                <table class="table m-0">
-                  <thead>
-                  <tr>
-                    <th style="width: 150px;">Title</th>
-                    <th>Owner</th>
-                    <th>Health Regulator</th>
-                    <th>VAT</th>
-                    <th>Activity</th>
-                    <th>State</th>
-                    <th style="width: 100px;">Classify</th>
-                    
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">MC' Donalds</a></td>
-                    <td>Petropoulos Panagiotis</td>
-                    <td>Petropoulos Panagiotis</td>
-                    <td>155130279</td>
-                    <td>EME plirous epexergasias</td>
-                    <td>Athens</td>
-                    <td><span class="badge badge-success">Low</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">Cafe Cafe</a></td>
-                    <td>Kontaxi Zaxaroula</td>
-                    <td>Kontaxi Euaggelia</td>
-                    <td>155130279</td>
-                    <td>EME plirous epexergasias</td>
-                    <td>Nea Smirni</td>
-                    <td><span class="badge badge-warning">Middle</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>Six Dogs</td>
-                    <td>Petropoulos Panagiotis</td>
-                    <td>155130279</td>
-                    <td>EME plirous epexergasias</td>
-                    <td>Glyfada</td>
-                    <td><span class="badge badge-danger">High</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>Coffe Island</td>
-                    <td>Petropoulos Panagiotis</td>
-                    <td>155130279</td>
-                    <td>EME plirous epexergasias</td>
-                    <td>Glyfada</td>
-                    <td><span class="badge badge-success">Low</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td>Petropoulos Panagiotis</td>
-                    <td>155130279</td>
-                    <td>EME plirous epexergasias</td>
-                    <td>Glyfada</td>
-                    <td><span class="badge badge-warning">Pending</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>iPhone 6 Plus</td>
-                    <td>Petropoulos Panagiotis</td>
-                    <td>155130279</td>
-                    <td>EME plirous epexergasias</td>
-                    <td>Glyfada</td>
-                    <td><span class="badge badge-danger">Delivered</span></td>
-                    
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                    <td>Call of Duty IV</td>
-                    <td>Petropoulos Panagiotis</td>
-                    <td>155130279</td>
-                    <td>EME plirous epexergasias</td>
-                    <td>Glyfada</td>
-                    <td><span class="badge badge-success">Shipped</span></td>
-                    
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.card-body -->
-            <div class="card-footer">
-              <nav aria-label="Business Page Navigation">
-                <ul class="pagination justify-content-center m-0">
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">6</a></li>
-                  <li class="page-item"><a class="page-link" href="#">7</a></li>
-                  <li class="page-item"><a class="page-link" href="#">8</a></li>
-                </ul>
-              </nav>
-            </div>
-            <!-- /.card-footer -->
-        </div>
-        <!-- /.card -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="new_inspection_results.html">
+                            <div class="input-group">
+                                <input type="search" class="form-control form-control-lg" placeholder="Search with AFM" value="099455787">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-lg btn-default">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
-      </div><!-- /.container-fluid -->
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <div class="list-group-item mb-3">
+                                <div class="row">
+                                    <div class="col px-4 mt-3">
+                                        <div>
+                                            <div class="float-right">1123456 (ver 1)</div>
+                                            <h3>Cafe Cafe</h3>
+                                            <p>
+                                              Αιμίλιου Βεάκη 104, 10448
+                                              <br>
+                                              Περιστέρι, Περιφέρεια Αττικής, Ελλάδα
+                                              <br>
+                                              <small><strong>Katastima:</strong> Kentriko</small>
+                                              <br>
+                                              <small><strong>Owner:</strong> Petropoulos Panagiotis</small>
+                                              <br>
+                                              <small><strong>Health Regulator:</strong> Petropoulos Panagiotis</small>
+                                              <br>
+                                              <small><strong>Activity:</strong> ΕΠΙΧΕΙΡΗΣΗ ΜΑΖΙΚΗΣ ΕΣΤΙΑΣΗΣ ΠΛΗΡΟΥΣ ΕΠΕΞΕΡΓΑΣΙΑΣ</small>
+                                              <br>
+                                              <small><strong>VAT:</strong> 099455787</small>
+                                            </p>
+                                            <a href="#" class="btn btn btn-danger float-right mb-2">Start</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item mb-3">
+                              <div class="row">
+                                  <div class="col px-4 mt-3">
+                                      <div>
+                                          <div class="float-right">1123456 (ver 1)</div>
+                                          <h3>Cafe Cafe</h3>
+                                          <p >                                          
+                                            Αιμίλιου Βεάκη 104, 10448
+                                            <br>
+                                            Περιστέρι, Περιφέρεια Αττικής, Ελλάδα
+                                            <br>
+                                            <small><strong>Katastima:</strong> Ypokatastima</small>
+                                            <br>
+                                            <small><strong>Owner:</strong> Petropoulos Panagiotis</small>
+                                            <br>
+                                            <small><strong>Health Regulator:</strong> Petropoulos Panagiotis</small>
+                                            <br>
+                                            <small><strong>Activity:</strong> ΕΠΙΧΕΙΡΗΣΗ ΜΑΖΙΚΗΣ ΕΣΤΙΑΣΗΣ ΠΛΗΡΟΥΣ ΕΠΕΞΕΡΓΑΣΙΑΣ</small>
+                                            <br>
+                                            <small><strong>VAT:</strong> 099455787</small>
+                                          </p>
+                                          <a href="#" class="btn btn btn-danger float-right mb-2">Start</a>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="list-group-item mb-3">
+                              <div class="row">
+                                  <div class="col px-4 mt-3">
+                                      <div>
+                                          <div class="float-right">1123456 (ver 1)</div>
+                                          <h3>Cafe Cafe</h3>
+                                          <p >                                            
+                                            Αιμίλιου Βεάκη 104, 10448
+                                            <br>
+                                            Περιστέρι, Περιφέρεια Αττικής, Ελλάδα
+                                            <br>
+                                            <small><strong>Katastima:</strong> Ypokatastima</small>
+                                            <br>
+                                            <small><strong>Owner:</strong> Petropoulos Panagiotis</small>
+                                            <br>
+                                            <small><strong>Health Regulator:</strong> Petropoulos Panagiotis</small>
+                                            <br>
+                                            <small><strong>Activity:</strong> ΕΠΙΧΕΙΡΗΣΗ ΜΑΖΙΚΗΣ ΕΣΤΙΑΣΗΣ ΠΛΗΡΟΥΣ ΕΠΕΞΕΡΓΑΣΙΑΣ</small>
+                                            <br>
+                                            <small><strong>VAT:</strong> 099455787</small>
+                                          </p>
+                                          <a href="#" class="btn btn btn-danger float-right mb-2">Start</a>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+      </div>
+      <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
